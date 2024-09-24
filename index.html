@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Trading Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body, html {
+            margin: 0; /* Ensure no margin around the body */
+            padding: 0; /* Ensure no padding around the body */
+            width: 100%; /* Full width */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack items vertically */
+            min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #2813cb;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            width: 150px; /* Adjust logo size */
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-us-btn {
+            background-color: white;
+            color: #2813cb;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .contact-us-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+        /* Full-width image below the nav bar */
+        .full-width-image {
+            background: url('assets/images/home_background_1.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+        }
+
+        main {
+            flex: 1; /* Allow main to grow and take available space */
+            margin: 0; /* Ensure no margin for the main content */
+        }
+
+        footer {
+            background: #333; /* Background color for the footer */
+            color: white; /* Text color for the footer */
+            text-align: center; /* Center text */
+            padding: 15px 0; /* Padding for the footer */
+            width: 100%; /* Full width */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <button class="contact-us-btn">Contact Us</button>
+    </header>
+
+    <!-- Full-width image section below the nav bar -->
+    <div class="full-width-image"></div>
+
+    <main>
+        <!-- Main content can go here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trading Website. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
